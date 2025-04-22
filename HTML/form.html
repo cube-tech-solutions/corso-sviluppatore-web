@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Modulo di Registrazione</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    fieldset {
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid #aaa;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+    .form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Modulo di Registrazione</h1>
+
+  <form action="/invia-dati" method="post" enctype="multipart/form-data">
+    
+    <fieldset>
+      <legend>Informazioni Personali</legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="dataNascita">Data di nascita:</label>
+      <input type="date" id="dataNascita" name="dataNascita">
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferenze</legend>
+      
+        <div class="form-group">
+          <label>Sesso:</label>
+          <label><input type="radio" name="sesso" value="M"> Maschio</label>
+          <label><input type="radio" name="sesso" value="F"> Femmina</label>
+          <label><input type="radio" name="sesso" value="Altro"> Altro</label>
+        </div>
+      
+        <div class="form-group">
+          <label>Interessi:</label>
+          <label><input type="checkbox" name="interessi" value="HTML"> HTML</label>
+          <label><input type="checkbox" name="interessi" value="CSS"> CSS</label>
+          <label><input type="checkbox" name="interessi" value="JavaScript"> JavaScript</label>
+        </div>
+      
+        <div class="form-group">
+          <label for="lingua">Lingua preferita:</label>
+          <select id="lingua" name="lingua">
+            <option value="">-- Seleziona --</option>
+            <option value="it">Italiano</option>
+            <option value="en">Inglese</option>
+            <option value="es">Spagnolo</option>
+          </select>
+        </div>
+      </fieldset>
+      
+
+    <fieldset>
+      <legend>Altro</legend>
+
+      <label for="messaggio">Note o commenti:</label>
+      <textarea id="messaggio" name="messaggio" rows="4" placeholder="Scrivi qui..."></textarea>
+
+      <label for="cv">Carica il tuo CV:</label>
+      <input type="file" id="cv" name="cv">
+    </fieldset>
+
+    <div class="buttons">
+      <button type="submit">Invia</button>
+      <button type="reset">Resetta</button>
+    </div>
+
+  </form>
+
+</body>
+</html>
