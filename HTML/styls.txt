@@ -1,3 +1,26 @@
+- Tabella
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+    }
+    thead {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    tfoot {
+      background-color: #e0e0e0;
+      font-style: italic;
+    }
+  </style>
+========================================================
+
   - Strutturale-tags.html
   
   <style>
@@ -15,7 +38,7 @@
   
   
   
-  
+  ===============================================================
   
   
   - profilo.html
