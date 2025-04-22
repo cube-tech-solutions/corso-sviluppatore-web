@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profilo personale di uno sviluppatore web">
+  <title>Profilo Personale – Mario Rossi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      margin-top: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      background-color: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .social a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mario Rossi</h1>
+    <p>Web Developer Junior</p>
+    <img src="https://via.placeholder.com/120" alt="Foto profilo Mario Rossi">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#chisono">Chi sono</a></li>
+      <li><a href="#competenze">Competenze</a></li>
+      <li><a href="#esperienze">Esperienze</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="chisono">
+      <h2>Chi sono</h2>
+      <p>Ciao! Sono Mario, uno sviluppatore web in formazione. Appassionato di tecnologia, design e coding, sto imparando HTML, CSS, JavaScript e framework come Bootstrap per creare siti responsive e moderni.</p>
+    </section>
+
+    <section id="competenze">
+      <h2>Competenze</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>Responsive Web Design (Media Queries, Flexbox, Grid)</li>
+        <li>Bootstrap 5</li>
+        <li>Git & GitHub</li>
+        <li>SEO base</li>
+      </ul>
+    </section>
+
+    <section id="esperienze">
+      <h2>Esperienze recenti</h2>
+      <article>
+        <h3>Sito Portfolio (2025)</h3>
+        <p>Realizzazione di un portfolio personale in HTML e CSS, con layout responsive e ottimizzazione SEO di base.</p>
+      </article>
+      <article>
+        <h3>Landing Page per evento (in corso)</h3>
+        <p>Progetto di gruppo per creare una landing page con Bootstrap, navbar, card e form contatto.</p>
+      </article>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="messaggio">Messaggio:</label><br>
+        <textarea id="messaggio" name="messaggio" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Invia">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mario Rossi – Web Developer</p>
+    <div class="social">
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="#">Email</a>
+    </div>
+  </footer>
+
+</body>
+</html>
