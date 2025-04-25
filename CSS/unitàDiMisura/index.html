@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profilo Web</title>
+  <style>
+    /* ✅ Reset base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px; /* Base rem */
+    }
+
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    /* 🎯 Layout preciso (px) */
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* ♿ Accessibile (rem/em) */
+    h1 {
+      font-size: 2rem; /* 32px */
+    }
+
+    .intro {
+      font-size: 1rem;
+      margin-top: 1.5em;
+      padding: 1em;
+    }
+
+    /* 🌊 Layout fluido (%) */
+    .contenuto {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .immagine, .testo {
+      width: 50%;
+      padding: 1em;
+    }
+
+    .immagine img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* 🔳 Responsive con viewport */
+    .contatti {
+      background-color: #f4f4f4;
+      margin-top: 3rem;
+      padding: 2vh 2vw;
+      font-size: 2vw;
+      height: 20vh;
+    }
+
+    @media (max-width: 768px) {
+      .immagine, .testo {
+        width: 100%;
+      }
+
+      .contatti {
+        font-size: 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="fady-ebied.jpg" alt="Logo" class="logo" />
+    <h1>Mario Rossi</h1>
+  </header>
+
+  <section class="intro">
+    <p>
+      Ciao! Sono Mario, un web developer appassionato di tecnologie moderne e design accessibile.
+    </p>
+  </section>
+
+  <section class="contenuto">
+    <div class="immagine">
+      <img src="fady-ebied.jpg" alt="Foto di Mario" />
+    </div>
+    <div class="testo">
+      <h2>Chi sono</h2>
+      <p>
+        Lavoro con HTML, CSS, JavaScript e React. Mi piace costruire esperienze responsive e accessibili.
+        Amo i layout fluidi e le animazioni leggere.
+      </p>
+    </div>
+  </section>
+
+  <section class="contatti">
+    <h3>Contatti</h3>
+    <p>Email: mario@example.com</p>
+  </section>
+
+</body>
+</html>

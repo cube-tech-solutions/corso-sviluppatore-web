@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model e Collasso dei Margini</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      padding: 2rem;
+    }
+
+    .box {
+      width: 300px;
+      padding: 20px;
+      border: 5px solid #333;
+      margin: 30px 0;
+      background-color: #cde;
+    }
+
+    .box1 {
+      background-color: #cce5ff;
+    }
+
+    .box2 {
+      background-color: #d4edda;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    .box3 {
+      background-color: #fff3cd;
+      margin-top: 50px; /* Collasserà con il margine bottom di box2 */
+    }
+
+    .info {
+      background-color: #fff;
+      padding: 10px;
+      margin-top: 50px;
+      border-left: 4px solid #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dimostrazione del Box Model</h1>
+
+  <div class="box box1">
+    <p>Box 1</p>
+    <p><strong>Padding:</strong> 20px</p>
+    <p><strong>Border:</strong> 5px</p>
+    <p><strong>Margin-top e bottom:</strong> 30px</p>
+  </div>
+
+  <div class="box box2">
+    <p>Box 2</p>
+    <p><strong>Margin-bottom:</strong> 50px</p>
+  </div>
+
+  <div class="box box3">
+    <p>Box 3</p>
+    <p><strong>Margin-top:</strong> 50px</p>
+    <p><em>⚠️ Attenzione: il margine tra Box2 e Box3 sarà solo 50px (non 100px)</em></p>
+  </div>
+
+  <div class="info">
+    <h2>✅ Spiegazione:</h2>
+    <ul>
+      <li>I margini <strong>verticali</strong> tra Box 2 e Box 3 si "collassano".</li>
+      <li>Anziché sommarsi (50px + 50px), il risultato è il valore maggiore: <strong>50px</strong>.</li>
+      <li>Se usi <code>border</code>, <code>padding</code> o <code>overflow: hidden</code> sul contenitore, puoi evitare il collasso.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
