@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esempio Selettori CSS</title>
+  <style>
+    /* Selettore universale */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Selettore per tipo/tag */
+    h1 {
+      color: navy;
+      text-align: center;
+    }
+
+    /* Selettore per classe */
+    .intro {
+      color: green;
+      font-size: 1.2em;
+    }
+
+    /* Selettore per ID */
+    #speciale {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Selettore per attributo */
+    input[type="email"] {
+      border: 2px solid orange;
+    }
+
+    /* Selettore discendente */
+    div p {
+      color: teal;
+    }
+
+    /* Selettore figlio diretto */
+    ul > li {
+      list-style-type: square;
+    }
+
+    /* Selettore adiacente */
+    h2 + p {
+      background-color: #f0f0f0;
+    }
+
+    /* Selettore fratelli generali */
+    h2 ~ p {
+      font-style: italic;
+    }
+
+    /* Pseudo-classe */
+    a:hover {
+      color: crimson;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    /* Pseudo-elemento */
+    p::first-line {
+      text-transform: uppercase;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Selettori CSS</h1>
+
+  <p class="intro">Questo paragrafo ha una classe.</p>
+  <p id="speciale">Questo paragrafo ha un ID speciale.</p>
+
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+  </form>
+
+  <div>
+    <p>Paragrafo dentro un div (selettore discendente).</p>
+  </div>
+
+  <ul>
+    <li>Primo elemento</li>
+    <li>Secondo elemento</li>
+  </ul>
+
+  <h2>Selettore adiacente e fratello</h2>
+  <p>Questo è subito dopo l'h2 (adiacente).</p>
+  <p>Questo è un altro fratello (fratello generico).</p>
+
+  <p>Un altro paragrafo di prova per il selettore ::first-line.</p>
+
+  <a href="#">Passa il mouse su questo link</a>
+
+</body>
+</html>

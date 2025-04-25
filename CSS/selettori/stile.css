@@ -1,0 +1,55 @@
+    /* Universale */
+    * {
+        font-family: Arial, sans-serif;
+      }
+  
+      /* Selettore per tipo */
+      h1 {
+        color: darkblue;
+      }
+  
+      /* Selettore per classe */
+      .evidenziato {
+        background-color: yellow;
+      }
+  
+      /* Selettore per ID */
+      #speciale {
+        font-size: 24px;
+        color: darkred;
+      }
+  
+      /* Selettore per attributo */
+      input[type="email"] {
+        border: 2px solid green;
+      }
+  
+      /* Selettore discendente */
+      section p {
+        color: teal;
+      }
+  
+      /* Selettore figlio diretto */
+      ul > li {
+        font-weight: bold;
+      }
+  
+      /* Selettore adiacente */
+      h2 + p {
+        color: orange;
+      }
+  
+      /* Selettore fratelli */
+      h3 ~ p {
+        font-style: italic;
+      }
+  
+      /* Pseudo-classe */
+      a:hover {
+        color: red;
+      }
+  
+      /* Pseudo-elemento */
+      p::first-line {
+        text-transform: uppercase;
+      }
