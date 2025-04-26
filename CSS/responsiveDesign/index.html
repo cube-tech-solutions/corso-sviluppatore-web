@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Responsive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .box {
+      background: #f0f0f0;
+      padding: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      .box {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Design</h1>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <h2>Colonna 1</h2>
+      <p>Contenuto testuale di esempio.</p>
+    </div>
+    <div class="box">
+      <h2>Colonna 2</h2>
+      <img src="https://via.placeholder.com/300" alt="Esempio immagine">
+    </div>
+  </div>
+
+</body>
+</html>
