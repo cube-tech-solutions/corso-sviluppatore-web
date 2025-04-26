@@ -1,0 +1,50 @@
+/* COMPONENTI SPECIFICI */
+
+.site-title {
+    font-size: 2.5rem;
+  }
+  
+  .site-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .profile-img {
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #005fa3;
+  }
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profilo Personale</title>
+
+  <!-- Collegamenti ai file CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-title">Ciao, sono Fady!</h1>
+    <p class="site-subtitle">Web Developer Junior</p>
+  </header>
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#about">Chi Sono</a></li>
+      <li><a href="#skills">Competenze</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <main class="site-main">
+    <section id="about" class="section">
+      <h2>Chi Sono</h2>
+      <p>Mi chiamo Fady, sono appassionato di tecnologia e sviluppo web.</p>
+      <img src="img/fadyebied.png" alt="Foto di Fady" class="profile-img">
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Competenze</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contattami</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Modulo Contatto</legend>
+
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Messaggio:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Invia</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Fady - Tutti i diritti riservati.</p>
+  </footer>
+
+</body>
+</html>
