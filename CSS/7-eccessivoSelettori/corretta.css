@@ -1,0 +1,12 @@
+/* Versione pulita */
+.site-header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+  }
+  
+  .main-content p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  

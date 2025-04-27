@@ -1,0 +1,12 @@
+/* Versione troppo specifica */
+body > header.site-header > h1 {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+  }
+  
+  body > main.main-content > section.intro > p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
